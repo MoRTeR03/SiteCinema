@@ -1,0 +1,551 @@
+
+#nh-form {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 470px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 31, 67, 0.15);
+    border-radius: 16px;
+    transition: all .5s ease;
+}
+
+#nh-form,
+#nh-form .nh-formBody-dropdownMenu {
+        color: #3A415E;
+        background: #FFFFFF;
+}
+
+#nh-form .nh-hide {
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
+        overflow: hidden !important;
+}
+
+#nh-form label .nh-hide {
+        position: absolute;
+        top: 100%;
+        left: 0;
+}
+
+#nh-form .nh-row {
+        display: flex;
+        align-items: center;
+}
+
+#nh-form .nh-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+}
+
+.nh-close {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    transition: all .15s ease-in;
+    z-index: 999;
+}
+
+.nh-close:hover {
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+/*#nh-form .nh-formBody {
+    margin: 0;
+    padding: 30px 40px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    text-align: left;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+} форма перед всім на сторінці*/
+
+@media (min-width: 500px) {
+    #nh-form .nh-formBody {
+        padding: 50px;
+    }
+}
+
+#nh-form .nh-decor {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#nh-form .nh-formBody a,
+#nh-form .nh-formSuccess-description a {
+    color: #2296F3;
+    text-decoration: none;
+}
+
+#nh-form .nh-formBody a:hover,
+#nh-form .nh-formSuccess-description a:hover {
+    text-decoration: underline;
+}
+
+#nh-form .nh-formBody-title,
+#nh-form .nh-formBody-description {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    letter-spacing: normal;
+}
+
+#nh-form .nh-formBody-title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.35;
+    padding-bottom: 20px;
+}
+
+#nh-form .nh-formBody-description {
+    font-weight: normal;
+    font-size: 14px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+#nh-form .nh-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 17px 25px;
+    background: rgba(19, 19, 19, 0.8);
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 0 35px;
+    z-index: 1;
+}
+
+#nh-form .nh-btn:before {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 7px;
+    right: 7px;
+    height: 35px;
+    z-index: -1;
+    background: rgba(19, 19, 19, 0.8);
+    opacity: 0.5;
+    filter: blur(10px);
+    border-radius: 5px;
+    transition: transform .25s ease;
+}
+
+#nh-form .nh-btn:hover:before {
+    transform: translateY(-10px);
+}
+
+#nh-form label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nh-form .nh-formBody-input {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 30px 0 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 56px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #BFC9D4;
+    color: #141F33;
+}
+
+#nh-form .nh-formBody-input.nh-formBody-dropdown {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+}
+
+#nh-form .nh-formBody-input.nh-formBody-dropdown > .nh-hide {
+        position: absolute;
+        top: 100%;
+        left: 0;
+}
+
+#nh-form .nh-formBody-input.nh-formBody-dropdown > .nh-icon {
+        margin-right: 8px;
+}
+
+#nh-form .nh-formBody-input.nh-formBody-dropdown .nh-formBody-dropdown-label {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#nh-form .nh-formBody-dropdownMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        z-index: 5;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        overflow: auto;
+}
+
+#nh-form .nh-focus > .nh-formBody-dropdownMenu {
+        display: flex;
+        flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    #nh-form .nh-focus > .nh-formBody-dropdownMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 100% !important;
+        max-height: 100% !important;
+    }
+}
+
+#nh-form .nh-formBody-dropdownMenu-item {
+        padding: 0 8px;
+        width: 100%;
+        max-width: 100%;
+        min-height: 32px;
+        height: 32px;
+        max-height: 32px;
+        white-space: nowrap;
+        box-sizing: border-box;
+}
+
+#nh-form .nh-formBody-dropdownMenu-item.nh-selected,
+#nh-form .nh-formBody-dropdownMenu-item:hover {
+        background: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+}
+
+#nh-form .nh-formBody-dropdownMenu-item > .nh-icon {
+        margin-right: 8px;
+}
+
+#nh-form .nh-formBody-dropdownMenu-item-label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+#nh-form .nh-formBody-input::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E91A7;
+}
+
+#nh-form .nh-formBody-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    -webkit-text-fill-color: #141F33;
+}
+
+#nh-form .nh-formBody-select {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px 0 10px;
+    width: 100%;
+    height: 48px;
+    background: #F5F8F9;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+#nh-form .nh-formBody-select:focus {
+    border: 1px solid #00A3FF;
+}
+
+#nh-form select.nh-formBody-input:required:invalid {
+    color: #8E91A7;
+}
+
+#nh-form select.nh-formBody-input option {
+    color: #141F33;
+}
+
+#nh-form .nh-label {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: fit-content;
+    max-width: 100%;
+    color: #8E91A7;
+    font-size: 10px;
+    line-height: 10px;
+    transition: opacity 275ms ease;
+    pointer-events: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#nh-form label.nh-focused .nh-label {
+    opacity: 1;
+}
+
+#nh-form .nh-header {
+    display: block;
+    padding: 30px 0 20px;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #8E91A7;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#nh-form .nh-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 5px;
+    box-sizing: border-box;
+}
+
+#nh-form .nh-checkbox.nh-group {
+    padding: 5px 0;
+}
+
+#nh-form .nh-header + .nh-checkbox.nh-group {
+    padding-top: 0;
+}
+
+#nh-form .nh-checkbox span {
+    font-size: 14px;
+    line-height: 150%;
+    margin-left: 12px;
+}
+
+#nh-form .nh-checkbox:not(.nh-selected) + .nh-checkbox-rel,
+#nh-form .nh-checkbox.nh-radio:not(.nh-selected) + .nh-radio-rel {
+    display: none;
+}
+
+#nh-form .nh-multiline textarea.nh-formBody-input {
+    min-height: 56px;
+    resize: none;
+    overflow: hidden;
+}
+
+#nh-form .nh-field-date,
+#nh-form .nh-field-date input[type='DATE'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 100%;
+}
+
+#nh-form .nh-errorMessage {
+    color: #00A3FF;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    margin-top: -4px;
+}
+
+#nh-form .nh-formBody-input:focus,
+#nh-form .nh-formBody label.nh-focus .nh-hint {
+    border-color: #00A3FF;
+}
+
+#nh-form .nh-formBody label.nh-focus:not(.checkbox) .nh-label {
+    color: #00A3FF;
+    opacity: 1;
+}
+
+#nh-form .nh-formBody-input:focus::placeholder,
+#nh-form .nh-error-pattern .nh-formBody-input::placeholder {
+    color: transparent;
+}
+
+#nh-form .nh-formBody label.nh-notEmpty:not(.checkbox) .nh-label {
+    opacity: 1;
+}
+
+#nh-form .nh-error-pattern .nh-errorMessage {
+    color: #FF0000;
+}
+
+#nh-form .nh-error-pattern .nh-label {
+    opacity: 1;
+}
+
+#nh-form .nh-error-required .nh-label {
+    color: #00A3FF;
+}
+
+#nh-form .nh-error-required .nh-formBody-input,
+#nh-form .nh-error-required .nh-hint {
+    border-color: #00A3FF;
+}
+
+#nh-form .nh-error-pattern .nh-label {
+    color: #FF0000;
+}
+
+#nh-form .nh-error-pattern .nh-formBody-input,
+#nh-form .nh-error-pattern .nh-hint {
+    border-color: #FF0000;
+}
+
+#nh-form .nh-hinted {
+    display: flex;
+}
+
+#nh-form .nh-hinted .nh-formBody-input {
+    width: calc(100% - 16px);
+}
+
+#nh-form .nh-hinted .nh-hint {
+    display: block;
+}
+
+
+#nh-form .nh-hint:hover p {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+#nh-form .nh-hint p {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 210px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    padding: 15px 20px;
+    border-top: 2px solid #00A3FF;
+    border-radius: 2px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in;
+}
+
+
+#nh-form .nh-recatpcha {
+    margin: 30px 0;
+}
+
+#nh-form .nh-formBody .nh-powered {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A8ADC4;
+}
+
+
+#nh-form .nh-formBody .nh-powered a {
+    position: relative;
+    margin-left: 28px;
+    color: #8E91A7;
+}
+
+#nh-form.nh-submitted .nh-formBody {
+    display: none;
+}
+
+#nh-form.nh-submitted .nh-formSuccess {
+    display: flex;
+    animation: nh-fadeIn .5s;
+}
+
+@keyframes nh-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#nh-form .nh-formSuccess {
+    height: 405px;
+    width: 100%;
+    max-width: 470px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 250ms ease 175ms;
+    display: none;
+}
+
+#nh-form .nh-formSuccess-icon,
+#nh-form .nh-formSuccess-icon-progress {
+    margin-bottom: 20px;
+    width: 38px;
+    height: 38px;
+}
+
+#nh-form .nh-formSuccess-title {
+    color: #2296F3;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 135%;
+    margin-bottom: 12px;
+}
+
+#nh-form .nh-formSuccess-description {
+    font-size: 16px;
+    line-height: 150%;
+}
+#nh-page {
+    background: #F5F8F9;
+}
+
+#nh-modalWrapper {
+    background: rgba(245, 248, 249, 0.6);
+}

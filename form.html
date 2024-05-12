@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="css/form.css" media="all"/>
+    <script src="js/form.js"></script>
+    <title>NetHunt CRM</title>
+<body id="nh-page">
+<div id="nh-form">
+<div class="nh-close" onclick="nhform('show', false)"></div>
+<form class="nh-formBody" onfocusin="nhForm.onFocus(event)" onfocusout="nhForm.onBlur(event)" onchange="nhForm.onChange(event, this)" onsubmit="nhForm.onSubmit(event)">
+    <div class="nh-decor"></div>
+        <p class="nh-formBody-title">Форма без назви</p>
+        <label>
+            <input type="TEXT" name="1" class="nh-formBody-input" placeholder="Ім&#39;я*" required>
+            <span class="nh-label">Ім&#39;я*</span>
+            <span class="nh-errorMessage"></span>
+        </label>
+        <label>
+            <input type="TEXT" name="2" class="nh-formBody-input" placeholder="Прізвище*" required>
+            <span class="nh-label">Прізвище*</span>
+            <span class="nh-errorMessage"></span>
+        </label>
+        <label>
+            <input type="EMAIL" name="3" class="nh-formBody-input" placeholder="Email адреса*" required>
+            <span class="nh-label">Email адреса*</span>
+            <span class="nh-errorMessage"></span>
+        </label>
+    <div id="64a5865bda8e0c0008d5550d-recaptcha" class="nh-recatpcha"></div>
+    <button class="nh-btn" type="submit">Відправити</button>
+    <div class="nh-powered">Powered by<a href="https://nethunt.com" target="_blank">NetHunt CRM</a></div>
+</form>
+ <div class="nh-formSuccess">
+    <div nh-component="success-icon" class="nh-formSuccess-icon"></div>
+        <span class="nh-formSuccess-title">Форму надіслано!</span>
+ </div>
+</div>
+</body>
+</html>
