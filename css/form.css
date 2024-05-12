@@ -61,30 +61,6 @@
     transform-origin: center;
 }
 
-/*#nh-form .nh-formBody {
-    margin: 0;
-    padding: 30px 40px;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #FFFFFF;
-    text-align: left;
-    box-shadow: none;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 0;
-    z-index: 1;
-} форма перед всім на сторінці*/
-
-@media (min-width: 500px) {
-    #nh-form .nh-formBody {
-        padding: 50px;
-    }
-}
-
 #nh-form .nh-decor {
     width: 24px;
     height: 24px;

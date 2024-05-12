@@ -260,6 +260,15 @@ a {
   text-decoration: underline;
 }*/
 
+.site-footer {
+  background-color: #0e0e0e;
+  padding-bottom: 55px;
+}
+
+footer {
+  display: block;
+  unicode-bidi: isolate;
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -395,4 +404,36 @@ body {
     border-right: 10px solid #000000;
     margin-right: 60px;
     transform: rotate(-45deg);
+}
+
+.menu-block {
+  display: flex; /* Встановлюємо контейнер блоку як flex */
+  justify-content: space-around; /* Розміщуємо дочірні елементи з рівною відстанню між ними */
+  align-items: center; /* Вирівнюємо дочірні елементи по вертикалі по центру */
+  background-color: #f2f2f2; /* Колір фону блоку */
+  padding: 20px; /* Зовнішні відступи для контейнера блоку */
+}
+
+.menu_soc {
+  display: flex; /* Встановлюємо контейнер блоку menu_soc як flex */
+}
+
+.menu_soc_item {
+  margin: 0 10px; /* Відстань між елементами */
+}
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Відступ зверху, щоб форма була посередині сторінки */
+  margin-left: 125px;
+}
+
+/* Стилі для форми */
+.bootstrap-form {
+  /* Додайте класи Bootstrap тільки для елементів в межах цього контейнера */
+  margin-bottom: 20px;
 }
