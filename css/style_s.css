@@ -4,7 +4,7 @@ body{
   background-color: #ffffff;
   display: grid;
   place-content: start space-evenly;
-  height: 100vh;
+  height: 100%;
 
 }
 .body-time{
@@ -12,9 +12,13 @@ body{
   transition: opacity 1s ease; /* Плавне з'явлення контенту */
 }
 main {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  box-sizing: border-box;
 }
 .main-nav_link {
   font-family: Arial, sans-serif;
@@ -72,8 +76,7 @@ border-bottom-color: crimson;
   color: orange;
 }
 .container {
-  width: 90%;
-  max-width: 1200px;
+  max-width: 95%; /* Змініть на більший відсоток або певне значення, щоб контент не стискався */
   margin: 0 auto;
 }
 
@@ -180,26 +183,6 @@ section p {
   }
 }
 
-/* Main */
-main {
-  margin: 50px;
-}
-
-/* Contact Info */
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-info img {
-  max-width: 200px;
-}
-
-.contact-info p {
-  font-size: 20px;
-  line-height: 1.5;
-}
 nav a:hover {
   color: #b6b6b6;
 }
@@ -215,10 +198,6 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin: 20px 0;
-}
-
-section {
-  margin: 50px 0;
 }
 
 h2 {
@@ -300,10 +279,6 @@ footer {
 .footer-right a:hover {
   color: #000;
 }
-
-body {
-  overflow: hidden;
-}
 .sprite {
   position: fixed;
   position: absolute;
@@ -338,26 +313,6 @@ body {
 
 .scroll-to-top:hover {
   background-color: #555;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#myBtn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*Стиль кнопки вверх*/
@@ -445,4 +400,35 @@ element.style {
 .movies-hire {
   margin: 0 -10px;
 }
+.section_01 {
+    margin: 70px 0 0 0;
+}
+.section {
+    position: relative;
+}
 
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.title-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
