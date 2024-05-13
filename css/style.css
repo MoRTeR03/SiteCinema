@@ -133,16 +133,19 @@ header nav a {
 
 /* Головна секція сайту */
 section {
+  display: block;
   margin-top: 80px;
   padding: 20px;
 }
 
 section h1 {
+  display: block;
   font-size: 32px;
   margin-top: 0;
 }
 
 section p {
+  display: block;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -215,10 +218,6 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin: 20px 0;
-}
-
-section {
-  margin: 50px 0;
 }
 
 h2 {

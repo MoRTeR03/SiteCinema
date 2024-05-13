@@ -291,3 +291,12 @@ a:hover {
 a:focus {
   outline: none;
 }
+.movie-coming-soon__time {
+  background-color: rgba(255, 242, 211, 0.67);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.79;
+  color: #312204;
+  padding: 0 12px;
+}
