@@ -960,7 +960,7 @@ body.article {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-size: 12px;
-    color: #ae7d14;
+    color: #000000;
     padding: 3px 7px;
 }
 
@@ -983,10 +983,10 @@ body.article {
     margin: 0 7px 7px 0;
     font-size: 12px;
     line-height: 1;
-    border: 1px solid #ae7d14;
+    border: 1px solid #000000;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    color: #ae7d14;
+    color: #000000;
 }
 
 /*Coming soon*/
